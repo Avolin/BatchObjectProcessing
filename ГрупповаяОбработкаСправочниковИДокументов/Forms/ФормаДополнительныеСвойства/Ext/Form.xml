@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.4">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗавершитьРедактированиеИЗакрыть" id="8">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ЗавершитьРедактированиеИЗакрыть</CommandName>
+				<ExtendedTooltip name="ФормаЗавершитьРедактированиеИЗакрытьРасширеннаяПодсказка" id="9"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="FillCheckProcessingAtServer">ОбработкаПроверкиЗаполненияНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ДополнительныеСвойства" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ДополнительныеСвойства</DataPath>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДополнительныеСвойстваКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ДополнительныеСвойстваКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="ДополнительныеСвойстваРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="ДополнительныеСвойстваСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>ДополнительныеСвойства</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДополнительныеСвойстваСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ДополнительныеСвойстваСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДополнительныеСвойстваСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>ДополнительныеСвойства</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДополнительныеСвойстваСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ДополнительныеСвойстваСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДополнительныеСвойстваУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>ДополнительныеСвойства</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДополнительныеСвойстваУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ДополнительныеСвойстваУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ДополнительныеСвойстваКлюч" id="4">
+					<DataPath>Объект.ДополнительныеСвойства.Ключ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДополнительныеСвойстваКлючКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДополнительныеСвойстваКлючРасширеннаяПодсказка" id="20"/>
+				</InputField>
+				<InputField name="ДополнительныеСвойстваЗначение" id="6">
+					<DataPath>Объект.ДополнительныеСвойства.Значение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДополнительныеСвойстваЗначениеКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ДополнительныеСвойстваЗначениеРасширеннаяПодсказка" id="21"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ГрупповаяОбработкаСправочниковИДокументов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗавершитьРедактированиеИЗакрыть" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить редактирование и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить редактирование и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗавершитьРедактированиеИЗакрыть</Action>
+		</Command>
+	</Commands>
+</Form>
