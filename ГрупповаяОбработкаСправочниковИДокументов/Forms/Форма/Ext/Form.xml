@@ -629,6 +629,12 @@
 																	<Button name="ОтборДобавитьВсеВозможныеПоляОтбора" id="92">
 																		<Type>CommandBarButton</Type>
 																		<CommandName>Form.Command.ДобавитьВсеВозможныеПоляОтбора</CommandName>
+																		<Title>
+																			<v8:item>
+																				<v8:lang>en</v8:lang>
+																				<v8:content>Add all possible filters</v8:content>
+																			</v8:item>
+																		</Title>
 																		<ExtendedTooltip name="ОтборДобавитьВсеВозможныеПоляОтбораРасширеннаяПодсказка" id="293"/>
 																	</Button>
 																</ChildItems>
@@ -787,6 +793,12 @@
 																		<Type>CommandBarButton</Type>
 																		<OnlyInAllActions>true</OnlyInAllActions>
 																		<CommandName>Form.Command.ДобавитьВсеВозможныеПоляСортировки</CommandName>
+																		<Title>
+																			<v8:item>
+																				<v8:lang>en</v8:lang>
+																				<v8:content>Add all possible sortings</v8:content>
+																			</v8:item>
+																		</Title>
 																		<ExtendedTooltip name="КомпоновщикНастройкиПорядокДобавитьВсеВозможныеПоляСортировкиРасширеннаяПодсказка" id="309"/>
 																	</Button>
 																</ChildItems>
