@@ -22,6 +22,12 @@
 			<Button name="ФормаНастройки" id="54">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.Настройки</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Settings</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="ФормаНастройкиРасширеннаяПодсказка" id="245"/>
 			</Button>
 			<Button name="ФормаРедактироватьСКД" id="25">
@@ -140,6 +146,12 @@
 											<ChildItems>
 												<InputField name="ТипОбъекта" id="6">
 													<DataPath>ТипОбъекта</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Object type</v8:content>
+														</v8:item>
+													</Title>
 													<ChoiceButton>true</ChoiceButton>
 													<ClearButton>false</ClearButton>
 													<SpinButton>false</SpinButton>
@@ -154,6 +166,10 @@
 															<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																<Presentation>
 																	<v8:item>
+																		<v8:lang>en</v8:lang>
+																		<v8:content>Documents</v8:content>
+																	</v8:item>
+																	<v8:item>
 																		<v8:lang>ru</v8:lang>
 																		<v8:content>Документы</v8:content>
 																	</v8:item>
@@ -166,6 +182,10 @@
 															<xr:CheckState>0</xr:CheckState>
 															<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																<Presentation>
+																	<v8:item>
+																		<v8:lang>en</v8:lang>
+																		<v8:content>Catalogs</v8:content>
+																	</v8:item>
 																	<v8:item>
 																		<v8:lang>ru</v8:lang>
 																		<v8:content>Справочники</v8:content>
@@ -180,6 +200,10 @@
 															<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																<Presentation>
 																	<v8:item>
+																		<v8:lang>en</v8:lang>
+																		<v8:content>Charts of calculation types</v8:content>
+																	</v8:item>
+																	<v8:item>
 																		<v8:lang>ru</v8:lang>
 																		<v8:content>Планы видов расчета</v8:content>
 																	</v8:item>
@@ -192,6 +216,10 @@
 															<xr:CheckState>0</xr:CheckState>
 															<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																<Presentation>
+																	<v8:item>
+																		<v8:lang>en</v8:lang>
+																		<v8:content>Charts of characteristic types</v8:content>
+																	</v8:item>
 																	<v8:item>
 																		<v8:lang>ru</v8:lang>
 																		<v8:content>Планы видов характеристик</v8:content>
@@ -206,6 +234,10 @@
 															<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																<Presentation>
 																	<v8:item>
+																		<v8:lang>en</v8:lang>
+																		<v8:content>Business processes</v8:content>
+																	</v8:item>
+																	<v8:item>
 																		<v8:lang>ru</v8:lang>
 																		<v8:content>Бизнес-процессы</v8:content>
 																	</v8:item>
@@ -218,6 +250,10 @@
 															<xr:CheckState>0</xr:CheckState>
 															<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																<Presentation>
+																	<v8:item>
+																		<v8:lang>en</v8:lang>
+																		<v8:content>Tasks</v8:content>
+																	</v8:item>
 																	<v8:item>
 																		<v8:lang>ru</v8:lang>
 																		<v8:content>Задачи</v8:content>
@@ -232,6 +268,10 @@
 															<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																<Presentation>
 																	<v8:item>
+																		<v8:lang>en</v8:lang>
+																		<v8:content>Exchange plans</v8:content>
+																	</v8:item>
+																	<v8:item>
 																		<v8:lang>ru</v8:lang>
 																		<v8:content>Планы обмена</v8:content>
 																	</v8:item>
@@ -244,6 +284,10 @@
 															<xr:CheckState>0</xr:CheckState>
 															<xr:Value xsi:type="FormChoiceListDesTimeValue">
 																<Presentation>
+																	<v8:item>
+																		<v8:lang>en</v8:lang>
+																		<v8:content>Constants</v8:content>
+																	</v8:item>
 																	<v8:item>
 																		<v8:lang>ru</v8:lang>
 																		<v8:content>Константы</v8:content>
@@ -263,6 +307,12 @@
 												</InputField>
 												<CheckBoxField name="ОбрабатыватьТЧ" id="46">
 													<DataPath>ОбрабатыватьТЧ</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Process tabular part</v8:content>
+														</v8:item>
+													</Title>
 													<CheckBoxType>Auto</CheckBoxType>
 													<ContextMenu name="ОбрабатыватьТЧКонтекстноеМеню" id="47"/>
 													<ExtendedTooltip name="ОбрабатыватьТЧРасширеннаяПодсказка" id="256"/>
@@ -485,6 +535,12 @@
 														<InputField name="ДеревоТаблицПредставлениеТаблицы" id="73">
 															<DataPath>ДеревоТаблиц.ПредставлениеТаблицы</DataPath>
 															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>en</v8:lang>
+																	<v8:content>Object name</v8:content>
+																</v8:item>
+															</Title>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ДеревоТаблицПредставлениеТаблицыКонтекстноеМеню" id="74"/>
 															<ExtendedTooltip name="ДеревоТаблицПредставлениеТаблицыРасширеннаяПодсказка" id="288"/>
@@ -537,6 +593,11 @@
 											<ChildItems>
 												<Page name="ГруппаНастройкиКомпоновщикаОтбор" id="49">
 													<Title>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Filter
+</v8:content>
+														</v8:item>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
 															<v8:content>Отбор</v8:content>
@@ -628,6 +689,12 @@
 																</CheckBoxField>
 																<InputField name="РежимОтбораХарактеристик" id="88">
 																	<DataPath>РежимОтбораХарактеристик</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Characteristics filter mode</v8:content>
+																		</v8:item>
+																	</Title>
 																	<TextEdit>false</TextEdit>
 																	<ChoiceList>
 																		<xr:Item>
@@ -665,6 +732,10 @@
 																	<DataPath>ТипЗначенияХарактеристики</DataPath>
 																	<Title>
 																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>filter by types</v8:content>
+																		</v8:item>
+																		<v8:item>
 																			<v8:lang>ru</v8:lang>
 																			<v8:content>отбор по типам</v8:content>
 																		</v8:item>
@@ -683,6 +754,10 @@
 												</Page>
 												<Page name="Сортировка" id="50">
 													<Title>
+														<v8:item>
+															<v8:lang>en</v8:lang>
+															<v8:content>Sort</v8:content>
+														</v8:item>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
 															<v8:content>Сортировка</v8:content>
@@ -843,6 +918,12 @@
 													<Button name="ФормаОтобрать" id="15">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.Отобрать</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Update with filter</v8:content>
+															</v8:item>
+														</Title>
 														<ExtendedTooltip name="ФормаОтобратьРасширеннаяПодсказка" id="326"/>
 													</Button>
 													<Button name="ТаблицаРезультатОтборКомандаУстановитьФлажки" id="35">
@@ -873,11 +954,23 @@
 													<Button name="ТаблицаРезультатОтборВидимостьКолонок" id="44">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.ВидимостьКолонок</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Columns visibility</v8:content>
+															</v8:item>
+														</Title>
 														<ExtendedTooltip name="ТаблицаРезультатОтборВидимостьКолонокРасширеннаяПодсказка" id="332"/>
 													</Button>
 													<Button name="ТаблицаРезультатОтборНастроитьДополнительныеСвойства" id="243">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.НастроитьДополнительныеСвойства</CommandName>
+														<Title>
+															<v8:item>
+																<v8:lang>en</v8:lang>
+																<v8:content>Additional settings</v8:content>
+															</v8:item>
+														</Title>
 														<ExtendedTooltip name="ТаблицаРезультатОтборНастроитьДополнительныеСвойстваРасширеннаяПодсказка" id="333"/>
 													</Button>
 												</ChildItems>
@@ -1001,6 +1094,12 @@
 															<ChildItems>
 																<InputField name="ВыберитеДействие" id="27">
 																	<DataPath>ВыберитеДействие</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Action choice</v8:content>
+																		</v8:item>
+																	</Title>
 																	<ChoiceButton>true</ChoiceButton>
 																	<ListChoiceMode>true</ListChoiceMode>
 																	<TextEdit>false</TextEdit>
@@ -1172,6 +1271,12 @@
 																<InputField name="ТаблицаРеквизитыСинонимРеквизита" id="99">
 																	<DataPath>ТаблицаРеквизиты.СинонимРеквизита</DataPath>
 																	<ReadOnly>true</ReadOnly>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Attribute</v8:content>
+																		</v8:item>
+																	</Title>
 																	<EditMode>EnterOnInput</EditMode>
 																	<ContextMenu name="ТаблицаРеквизитыСинонимРеквизитаКонтекстноеМеню" id="100"/>
 																	<ExtendedTooltip name="ТаблицаРеквизитыСинонимРеквизитаРасширеннаяПодсказка" id="366"/>
@@ -1179,12 +1284,24 @@
 																<InputField name="ТаблицаРеквизитыСтароеЗначение" id="115">
 																	<DataPath>ТаблицаРеквизиты.СтароеЗначение</DataPath>
 																	<ReadOnly>true</ReadOnly>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>Former value</v8:content>
+																		</v8:item>
+																	</Title>
 																	<EditMode>EnterOnInput</EditMode>
 																	<ContextMenu name="ТаблицаРеквизитыСтароеЗначениеКонтекстноеМеню" id="116"/>
 																	<ExtendedTooltip name="ТаблицаРеквизитыСтароеЗначениеРасширеннаяПодсказка" id="367"/>
 																</InputField>
 																<InputField name="ТаблицаРеквизитыНовоеЗначение" id="101">
 																	<DataPath>ТаблицаРеквизиты.НовоеЗначение</DataPath>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>en</v8:lang>
+																			<v8:content>New value</v8:content>
+																		</v8:item>
+																	</Title>
 																	<EditMode>EnterOnInput</EditMode>
 																	<ContextMenu name="ТаблицаРеквизитыНовоеЗначениеКонтекстноеМеню" id="102"/>
 																	<ExtendedTooltip name="ТаблицаРеквизитыНовоеЗначениеРасширеннаяПодсказка" id="368"/>
@@ -1762,6 +1879,10 @@
 		</Command>
 		<Command name="ВыполнитьДействие" id="3">
 			<Title>
+				<v8:item>
+					<v8:lang>en</v8:lang>
+					<v8:content>Execute</v8:content>
+				</v8:item>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Выполнить</v8:content>

@@ -2,6 +2,63 @@
 // СЛУЖЕБНЫЕ ПРОЦЕДУРЫ И ФУНКЦИИ РЕГИСТРАЦИИ ОБРАБОТКИ
 //
 
+//  --> Add Kostromin A.  
+// 
+Function InfoAboutExternalDataProcessor() Export
+
+	//Инициализируем структуру с параметрами регистрации
+	
+	//Определяем список объектов, вызывающих обработку	
+	ProcessorInfo = ПолучитьПараметрыРегистрации();
+	ProcessorInfo.Версия = "3.3";
+	
+	ProcessorInfo.Insert("Description", ЭтотОбъект.Метаданные().Представление());
+	ProcessorInfo.Insert("Information", ЭтотОбъект.Метаданные().Представление());
+	ProcessorInfo.Insert("Version", "3.3");
+	ProcessorInfo.Insert("SafeMode", True);
+	ProcessorInfo.Insert("Type", "AdditionalDataProcessor");
+	
+	//Определяем команды для печати формы
+	
+	ТаблицаКоманд = ПолучитьТаблицуКоманд();
+
+	ДобавитьКоманду(ТаблицаКоманд,
+		"Групповая обработка справочников и документов", // Представление команды в пользовательском интерфейсе
+		"ГрупповаяОбработкаСправочниковИДокументов",
+		"ОткрытиеФормы", // Уникальный идентификатор команды
+	);
+
+	ProcessorInfo.Вставить("Команды", ТаблицаКоманд);
+	
+	
+	Commands = New ValueTable();
+	Commands.Columns.Add("ID");	
+	Commands.Columns.Add("Use");
+	Commands.Columns.Add("Presentation");
+	Commands.Columns.Add("ShowNotification");
+	Commands.Columns.Add("Modifier");
+	Commands.Columns.Add("ShowAlert");
+	Commands.Columns.Add("UsageVariant");
+	
+	NewCommand = Commands.Add();
+	NewCommand.ID = "ОткрытиеФормы";
+	NewCommand.Presentation = "Групповая обработка справочников и документов";
+	NewCommand.Use = "FormOpening";
+	NewCommand.UsageVariant = "FormOpening";
+	NewCommand.ShowNotification = False;
+	NewCommand.Modifier = "";
+	NewCommand.ShowAlert = False;
+	
+	ProcessorInfo.Вставить("Commands", Commands);
+	
+
+	Возврат ProcessorInfo;
+	
+EndFunction
+
+// <-- Add Kostromin A.  
+
+
 // Сервисная экспортная функция. Вызывается в основной программе при регистрации обработки в информационной базе
 // Возвращает структуру с параметрами регистрации
 //
